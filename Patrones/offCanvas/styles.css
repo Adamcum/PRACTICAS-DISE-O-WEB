@@ -1,0 +1,40 @@
+/* Reset básico */
+body { margin: 0; font-family: sans-serif; overflow-x: hidden; }
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.columna1 {
+    width: 250px;
+    background: #333;
+    color: white;
+    position: fixed; /* Fixed para que no se mueva al hacer scroll */
+    height: 100%;
+    transform: translateX(-250px); /* Escondido por defecto */
+    transition: transform 0.3s ease-out;
+    z-index: 10;
+}
+
+.columna1.open {
+    transform: translateX(0); /* Se muestra */
+}
+
+.columna2 {
+    flex: 1;
+    padding: 20px;
+    background: #f4f4f4;
+    transition: margin-left 0.3s ease;
+}
+
+/* Escritorio: El menú siempre se ve */
+@media (min-width: 600px) {
+    .columna1 {
+        position: relative;
+        transform: translateX(0);
+    }
+    #menuBtn { display: none; } /* Ocultar botón en PC */
+}

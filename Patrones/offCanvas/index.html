@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Off Canvas Funcional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="menuBtn">☰ Abrir Menú</button>
+        Navbar
+    </nav>
+
+    <div class="container" id="appContainer">
+        <aside id="sidePanel" class="columna1">
+            <h3>Menú Lateral</h3>
+            <ul>
+                <li>Opción 1</li>
+                <li>Opción 2</li>
+            </ul>
+        </aside>
+
+        <main id="mainPanel" class="columna2">
+            <section>
+                <h2>Sección Principal</h2>
+                <p>Desliza desde la izquierda o usa el botón para ver el menú.</p>
+                <p>Lorem ipsum dolor sit amet...</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
