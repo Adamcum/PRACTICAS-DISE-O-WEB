@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle - Proyecto Karón</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/Gemini_Generated_Image_ytqygaytqygaytqy (1).png" 
+             alt="Logo" class="header-logo">
+        <h1>Mi Librería</h1>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <form class="search-bar">
+            <input type="text" placeholder="Buscar libros...">
+        </form>
+
+        <ul id="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda-online</a></li>
+            <li><a href="#">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main class="detail-bg-wrapper">
+        <div class="detail-content">
+            
+            <div class="detail-cover">
+                <img src="https://m.media-amazon.com/images/I/91vZCx+zcpL._AC_UF894,1000_QL80_.jpg" alt="Portada Proyecto Karón">
+            </div>
+
+            <div class="detail-info">
+                <h2 class="detail-title">PROYECTO KARÓN - ANA B. NIETO</h2>
+
+                <div class="detail-row">
+                    <span>Calificación:</span>
+                    <div class="detail-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <span>Precio:</span>
+                    <strong>16.10 €</strong>
+                </div>
+                <p class="preventa-text">Cómpralo en preventa ya</p>
+
+                <div class="synopsis-section">
+                    <h3>Sinopsis:</h3>
+                    <p class="synopsis-text">
+                        Alaxi Dalem está acostumbrado a una vida demasiado tranquila, como agricultor y padre de familia, en un pueblo perdido del desierto de Mojave.
+                    </p>
+                    <br>
+                    <p class="synopsis-text">
+                        Cuando recibe la visita de dos militares su pasado le explota en la cara: Lena Gradavi, alto mando de defensa, ha sido secuestrada en el Karón.
+                    </p>
+                </div>
+
+                <div class="detail-footer">
+                    <p>Descubre más productos del estilo en nuestra tienda:</p>
+                    <span style="font-size: 20px; color: #9ab;">A.C STORE</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Enlaces</h3>
+            <p>Aviso Legal</p>
+        </div>
+        <div><p>&copy; 2024 Mi Librería S.L.</p></div>
+        <div class="social-links">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="IG">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YT">
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

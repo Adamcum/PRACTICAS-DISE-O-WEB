@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Mi Librería - Inicio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+
+    <header>
+
+        <img src="img/Gemini_Generated_Image_ytqygaytqygaytqy (1).png"
+
+             alt="Logo Mi Librería"
+
+             class="header-logo">
+
+             
+
+        <h1>Mi Librería</h1>
+
+    </header>
+
+
+
+    <nav>
+        <form class="search-bar">
+            <input type="text" placeholder="Buscar...">
+        </form>
+        <ul id="nav-list"> 
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda-online</a></li>
+            <li><a href="#">Registro</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+
+    <main>
+
+        <section class="hero-section">
+
+            <h1>Tu Portal a lo Imposible</h1>
+
+            <p>Descubre historias que desafían tu imaginación.</p>
+
+            <br>
+
+            <div class="hero-image">
+
+                <img src="img/johannes-plenio-DKix6Un55mw-unsplash.jpg" alt="Hero">
+
+            </div>
+
+        </section>
+
+
+
+        <section class="highlight-section">
+
+            <div class="section-label">Nuestros productos más destacados</div>
+
+           
+
+            <div class="horizontal-scroll-container">
+
+                <article class="card-featured">
+
+                    <h3>Geronimo Stilton</h3>
+
+                    <img src="img/geronimo.jpg" alt="Libro 1">
+
+                    <div class="card-desc-box">
+
+                        <p>18.95 €</p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card-featured">
+
+                    <h3>Los juegos del hambre - Amanecer en la cosecha</h3>
+
+                    <img src="img/amanecer.avif" alt="Libro 2">
+
+                    <div class="card-desc-box">
+
+                        <p>24.65 €</p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card-featured">
+
+                    <h3>El despertar del leviatan</h3>
+
+                    <img src="img/leviatan.jpg" alt="Libro 3">
+
+                    <div class="card-desc-box">
+
+                        <p>21.75 €</p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card-featured">
+
+                    <h3>Matar a Un Reino</h3>
+
+                    <img src="img/matar reino.jpg" alt="Libro 4">
+
+                    <div class="card-desc-box">
+
+                        <p>17.05 €</p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card-featured">
+
+                    <h3>El Coleccionista de Brujas</h3>
+
+                    <img src="img/brujas.jpg" alt="Libro 5">
+
+                    <div class="card-desc-box">
+
+                        <p>17.95 €</p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card-featured">
+
+                    <h3>Todas Las Hadas Del Reino</h3>
+
+                    <img src="img/hadas.jpg" alt="Libro 6">
+
+                    <div class="card-desc-box">
+
+                        <p>15.15 €</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="map-section">
+
+            <div class="map-circle">
+
+                <img src="img/mapa.jpg" alt="Mapa">
+
+            </div>
+
+            <div class="map-list">
+
+                <ul>
+
+                    <li>📍 Madrid</li>
+
+                    <li>📍 Barcelona</li>
+
+                    <li>📍 Valencia</li>
+
+                    <li>📍 Málaga</li>
+
+                    <li>📍 Granada</li>
+
+                    <li>📍 Sevilla</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div>
+
+            <h3>Enlaces</h3>
+
+            <p>Aviso Legal</p>
+
+            <p>Privacidad</p>
+
+        </div>
+
+        <div>
+
+            <p>&copy; 2024 Mi Librería S.L.</p>
+
+        </div>
+
+        <div class="social-links">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="IG">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YT">
+
+        </div>
+
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>
