@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 03: Colores y Personalización</title>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-gray-100 p-10 font-sans">
+
+    <div class="max-w-2xl mx-auto space-y-10">
+      
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">1. Uso Básico de Colores</h2>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <h1 class="bg-red-900 text-white p-4 rounded text-center">
+            Bienvenido a Tailwind (bg-red-900)
+          </h1>
+          <p class="mt-4 text-pink-600 font-semibold text-center">
+            Texto en rosa (text-pink-600)
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">2. Opacidad y Transparencia</h2>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <div class="bg-black/90 text-pink-500/50 p-6 rounded text-xl font-bold text-center">
+            Título con transparencias (Slash Syntax)
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">3. Agrupación y Herencia</h2>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <div class="text-green-600 bg-black p-6 rounded border-4 border-green-600">
+            <p class="text-lg">Este texto hereda el color verde del padre.</p>
+            <p class="text-sm mt-2 opacity-75">Este también lo hereda.</p>
+            <p class="text-white mt-4 font-bold">Este hijo rompe la herencia (clase text-white).</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">4. Valores "Arbitrary" (Corchetes)</h2>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <h1 class="bg-[#2E86AB] text-white p-4 rounded text-center shadow-lg">
+            Fondo: #2E86AB (Directo en HTML)
+          </h1>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">5. Icono SVG Personalizado</h2>
+        <div class="p-6 bg-white rounded-lg shadow-md flex flex-col items-center">
+          <p class="mb-4 text-gray-600">Icono de Facebook con el color oficial <code>#1877f2</code></p>
+          
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            class="w-16 h-16 fill-[#1877f2] hover:opacity-80 transition-opacity cursor-pointer"
+          >
+            <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path>
+          </svg>
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

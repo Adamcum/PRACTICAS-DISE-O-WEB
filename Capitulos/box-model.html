@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 05: Box Model y Dimensiones</title>
+    <script type="module" src="/src/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body class="bg-gray-50 font-sans text-gray-800 p-10 h-screen">
+
+    <div class="max-w-4xl mx-auto space-y-16 pb-20">
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-indigo-700">1. Anchura (Width)</h2>
+        <div class="space-y-4 bg-white p-6 rounded shadow-sm">
+          <div class="w-64 bg-indigo-200 p-2 text-center rounded">
+            w-64 (256px)
+          </div>
+          
+          <div class="w-1/2 bg-indigo-300 p-2 text-center rounded">
+            w-1/2 (50%)
+          </div>
+          
+          <div class="w-full bg-indigo-400 p-2 text-center text-white rounded">
+            w-full (100%)
+          </div>
+
+          <div class="w-[300px] bg-indigo-500 p-2 text-center text-white rounded">
+            w-[300px] (Valor Arbitrario)
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-indigo-700">2. Altura (Height)</h2>
+        <div class="h-64 bg-gray-200 p-4 flex items-end gap-4 rounded border border-gray-300">
+          
+          <div class="w-20 h-full bg-pink-400 flex items-center justify-center text-white text-xs">
+            h-full
+          </div>
+          <div class="w-20 h-3/4 bg-pink-500 flex items-center justify-center text-white text-xs">
+            h-3/4
+          </div>
+          <div class="w-20 h-1/2 bg-pink-600 flex items-center justify-center text-white text-xs">
+            h-1/2
+          </div>
+        </div>
+        <p class="text-sm text-gray-500 mt-2">* El contenedor gris tiene h-64. Los hijos usan porcentajes relativos a él.</p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-indigo-700">3. Padding y Margin</h2>
+        
+        <div class="bg-white p-6 rounded shadow-sm border border-gray-200">
+          
+          <div class="bg-green-100 p-8 border-2 border-green-500 mb-8 text-center">
+            <span class="bg-white px-2">Soy contenido con <strong>p-8</strong> (padding)</span>
+          </div>
+
+          <div class="w-1/2 mx-auto bg-blue-100 p-4 text-center border-2 border-blue-500">
+            Soy un div con <strong>mx-auto</strong> (Centrado)
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-indigo-700">4. Bordes</h2>
+        <div class="grid grid-cols-2 gap-4">
+          
+          <div class="p-4 border-4 border-indigo-500 bg-white text-center">
+            border-4 solid
+          </div>
+
+          <div class="p-4 border-4 border-red-500 border-dashed bg-white text-center">
+            border-dashed
+          </div>
+
+          <div class="p-4 border-4 border-orange-400 border-dotted bg-white text-center">
+            border-dotted
+          </div>
+          
+          <div class="p-4 border-b-8 border-purple-600 bg-white text-center">
+            border-b-8 (Solo abajo)
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-indigo-700">5. Space y Divide</h2>
+        
+        <h3 class="font-bold mb-2">Space-x-4 (Margen entre hijos)</h3>
+        <div class="flex space-x-4 mb-6 bg-gray-100 p-4 rounded">
+          <div class="w-16 h-16 bg-teal-500 text-white flex items-center justify-center">1</div>
+          <div class="w-16 h-16 bg-teal-500 text-white flex items-center justify-center">2</div>
+          <div class="w-16 h-16 bg-teal-500 text-white flex items-center justify-center">3</div>
+        </div>
+
+        <h3 class="font-bold mb-2">Divide-y (Bordes entre hijos)</h3>
+        <ul class="border border-gray-300 rounded divide-y divide-gray-300 bg-white">
+          <li class="p-3">Item de lista 1</li>
+          <li class="p-3">Item de lista 2</li>
+          <li class="p-3">Item de lista 3</li>
+        </ul>
+      </section>
+
+      <hr class="border-t-2 border-gray-300 my-10">
+
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Resultado Final: La Card</h2>
+        
+        <div class="max-w-sm mx-auto border-2 border-gray-200 py-7 px-5 rounded-2xl shadow-lg bg-white space-y-6">
+          
+          <img 
+            src="https://picsum.photos/id/28/800/600" 
+            class="w-full h-60 object-cover rounded-xl shadow-sm" 
+            alt="Paisaje Bosque"
+          >
+          
+          <div>
+             <h3 class="text-2xl font-bold text-gray-900 mb-3">Excursión al Bosque</h3>
+             <p class="text-gray-600 leading-relaxed">
+               Disfruta de una aventura inolvidable rodeado de naturaleza. 
+               Senderos ocultos, aire fresco y vistas panorámicas te esperan en esta experiencia única.
+             </p>
+          </div>
+          
+          <a href="#" class="block w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold text-center py-3 rounded-full shadow-md shadow-blue-200">
+            Reservar Ahora
+          </a>
+
+        </div>
+
+      </section>
+
+    </div>
+  </body>
+</html>

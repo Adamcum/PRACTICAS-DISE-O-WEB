@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica 04: Tipografía</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  
+  <body class="bg-slate-100 p-10 font-sans text-slate-800">
+
+    <div class="max-w-3xl mx-auto space-y-12">
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-purple-700">1. Fuentes Predeterminadas</h2>
+        <div class="grid gap-4 bg-white p-6 rounded-lg shadow-sm">
+          <div>
+            <span class="text-sm text-gray-400 block mb-1">font-sans (Por defecto)</span>
+            <p class="font-sans text-xl">Este texto usa la fuente Sans-Serif estándar.</p>
+          </div>
+          <hr>
+          <div>
+            <span class="text-sm text-gray-400 block mb-1">font-serif</span>
+            <p class="font-serif text-xl">Este texto tiene un estilo más clásico (Serif).</p>
+          </div>
+          <hr>
+          <div>
+            <span class="text-sm text-gray-400 block mb-1">font-mono</span>
+            <p class="font-mono text-xl bg-gray-100 p-2 rounded">console.log("Ideal para código");</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-purple-700">2. Google Fonts y Valores Arbitrarios</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <p class="mb-4">
+            A continuación usamos la fuente importada en el <code>&lt;head&gt;</code> usando corchetes y guiones bajos:
+            <code>font-['Plus_Jakarta_Sans']</code>
+          </p>
+          
+          <div class="p-6 bg-purple-50 rounded-lg border border-purple-100">
+            <h3 class="font-['Plus_Jakarta_Sans'] text-3xl font-bold text-purple-900">
+              Título con Plus Jakarta Sans
+            </h3>
+            <p class="font-['Plus_Jakarta_Sans'] mt-2 text-lg">
+              Mira qué moderna se ve esta tipografía importada desde Google.
+            </p>
+          </div>
+
+          <p class="mt-6 font-['Times_New_Roman'] text-xl">
+            También funciona con fuentes del sistema: Esto es Times New Roman.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-purple-700">3. Tamaños (Scale & Arbitrary)</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm space-y-4">
+          <p class="text-xs">text-xs (Extra pequeño)</p>
+          <p class="text-sm">text-sm (Pequeño)</p>
+          <p class="text-base bg-gray-100 inline-block px-2">text-base (Tamaño base / 16px)</p>
+          <p class="text-xl">text-xl (Extra grande)</p>
+          <p class="text-4xl">text-4xl (Muy grande)</p>
+          
+          <div class="border-t pt-4 mt-4">
+            <p class="text-[40px] leading-tight text-blue-600">
+              Texto de 40px exactos (text-[40px])
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-purple-700">4. Peso y Grosor</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm space-y-3">
+          <p class="font-['Plus_Jakarta_Sans'] font-thin text-2xl">Font Thin (100)</p>
+          <p class="font-['Plus_Jakarta_Sans'] font-light text-2xl">Font Light (300)</p>
+          <p class="font-['Plus_Jakarta_Sans'] font-normal text-2xl">Font Normal (400)</p>
+          <p class="font-['Plus_Jakarta_Sans'] font-medium text-2xl">Font Medium (500)</p>
+          <p class="font-['Plus_Jakarta_Sans'] font-bold text-2xl">Font Bold (700)</p>
+          <p class="font-['Plus_Jakarta_Sans'] font-extrabold text-2xl">Font ExtraBold (800)</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-purple-700">5. Alineación y Combos</h2>
+        <div class="bg-white p-6 rounded-lg shadow-sm space-y-6">
+          
+          <p class="text-center bg-gray-100 p-2">text-center</p>
+          <p class="text-right bg-gray-100 p-2">text-right</p>
+          
+          <div class="p-6 border-2 border-dashed border-purple-300 rounded text-center">
+            <p class="text-5xl font-['Plus_Jakarta_Sans'] font-extrabold italic text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              Textos en Tailwind
+            </p>
+            <p class="mt-2 text-gray-500 font-medium">
+              (Tamaño 5xl + Fuente Custom + Extra Bold + Italic + Gradiente)
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>
