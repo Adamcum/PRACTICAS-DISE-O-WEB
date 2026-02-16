@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCraft - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-[#0a0a0a] text-white antialiased overflow-x-hidden">
+
+    <header class="fixed top-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/5 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center relative">
+            <div class="text-2xl font-black italic tracking-tighter">CodeCraft</div>
+
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+            <label for="menu-toggle" class="md:hidden cursor-pointer z-[60] relative w-8 h-6 flex flex-col justify-between">
+                <span class="w-full h-0.5 bg-white transition-all duration-500 origin-left"></span>
+                <span class="w-full h-0.5 bg-white transition-all duration-500"></span>
+                <span class="w-full h-0.5 bg-white transition-all duration-500 origin-left"></span>
+            </label>
+
+            <style>
+                #menu-toggle:checked ~ label span:nth-child(1) { transform: rotate(45deg) translate(2px, -2px); }
+                #menu-toggle:checked ~ label span:nth-child(2) { opacity: 0; }
+                #menu-toggle:checked ~ label span:nth-child(3) { transform: rotate(-45deg) translate(2px, 2px); }
+                #menu-toggle:checked ~ nav ul { opacity: 1 !important; pointer-events: auto !important; }
+            </style>
+
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#" class="text-sm font-medium hover:text-gray-400 transition">Registro</a>
+                <a href="contacto.html" class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-200 transition">Acceder al curso</a>
+            </nav>
+
+            <nav class="fixed inset-0 h-screen w-screen bg-[#0a0a0a] z-50 flex flex-col items-center justify-center md:hidden transition-all duration-1000 ease-in-out -translate-y-full peer-checked:translate-y-0">
+                <ul class="flex flex-col items-center gap-6 w-full px-10 opacity-0 transition-opacity duration-300 delay-700 pointer-events-none">
+                    <li class="w-full max-w-[200px]">
+                        <a href="#" class="block text-center py-3 border border-white/10 rounded-xl text-sm font-medium hover:bg-white/5 transition">Registro</a>
+                    </li>
+                    <li class="w-full max-w-[200px]">
+                        <a href="contacto.html" class="block text-center py-3 bg-white text-black rounded-xl text-sm font-bold hover:bg-gray-200 transition">Acceder al curso</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-28 pb-20 px-6 max-w-6xl mx-auto space-y-24">
+        
+        <section class="relative rounded-[2.5rem] overflow-hidden group border border-white/5 shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400" 
+                 class="w-full h-[500px] object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" alt="Hero">
+            
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-t from-[#0a0a0a] via-transparent">
+                <h1 class="text-4xl md:text-6xl font-black mb-4 leading-tight">Domina CSS <br>desde cero</h1>
+                <p class="text-gray-400 text-sm md:text-lg max-w-xl mb-8 leading-relaxed">
+                    Aprende maquetación profesional con las últimas tendencias de la industria.
+                </p>
+                <a href="contacto.html" class="bg-white text-black px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-gray-200 transition-all active:scale-95 shadow-xl inline-block">
+                    Inscríbete ahora
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center md:text-left mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Lo Que Aprenderás</h2>
+                <p class="text-gray-500 max-w-2xl">Contenido estructurado para llevarte de principiante a experto en tiempo récord.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#161616] p-10 rounded-3xl border border-white/5 hover:border-white/10 transition group">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-black transition-colors">
+                        <i class='bx bx-layer text-2xl'></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fundamentos</h3>
+                    <p class="text-gray-500 leading-relaxed">Domina el modelo de caja, posicionamiento y selectores avanzados.</p>
+                </div>
+
+                <div class="bg-[#161616] p-10 rounded-3xl border border-white/5 hover:border-white/10 transition group">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-black transition-colors">
+                        <i class='bx bx-devices text-2xl'></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Responsive Design</h3>
+                    <p class="text-gray-500 leading-relaxed">Crea layouts que se adapten perfectamente a cualquier pantalla.</p>
+                </div>
+
+                <div class="bg-[#161616] p-10 rounded-3xl border border-white/5 hover:border-white/10 transition group">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-black transition-colors">
+                        <i class='bx bx-bolt-circle text-2xl'></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Animaciones</h3>
+                    <p class="text-gray-500 leading-relaxed">Añade vida a tus interfaces con transiciones y keyframes.</p>
+                </div>
+
+                <div class="bg-[#161616] p-10 rounded-3xl border border-white/5 hover:border-white/10 transition group">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-white group-hover:text-black transition-colors">
+                        <i class='bx bx-terminal text-2xl'></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Optimización</h3>
+                    <p class="text-gray-500 leading-relaxed">Escribe código limpio, mantenible y de alto rendimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 italic uppercase tracking-tighter">Voces de la Comunidad</h2>
+                <div class="h-1 w-20 bg-white mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-b from-white/5 to-transparent p-8 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-white/20 transition group">
+                    <p class="text-gray-300 italic mb-8 leading-relaxed">
+                        "El módulo de CSS Grid cambió mi forma de entender el diseño web. Ahora mis proyectos se ven profesionales en cualquier dispositivo."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?u=ana" class="w-12 h-12 rounded-full border border-white/20 group-hover:scale-110 transition" alt="Ana">
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Ana García</h4>
+                            <p class="text-gray-500 text-xs italic">Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-b from-white/5 to-transparent p-8 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-white/20 transition group">
+                    <p class="text-gray-300 italic mb-8 leading-relaxed">
+                        "Explicaciones claras y directas al grano. Sin duda, el mejor curso para dominar CSS moderno en 2026."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?u=carlos" class="w-12 h-12 rounded-full border border-white/20 group-hover:scale-110 transition" alt="Carlos">
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Carlos Ruiz</h4>
+                            <p class="text-gray-500 text-xs italic">Diseñador UI/UX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-b from-white/5 to-transparent p-8 rounded-[2.5rem] border border-white/5 flex flex-col justify-between hover:border-white/20 transition group">
+                    <p class="text-gray-300 italic mb-8 leading-relaxed">
+                        "Las animaciones con keyframes que aprendí aquí le dieron ese 'wow factor' que mis clientes estaban buscando."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://i.pravatar.cc/150?u=lucia" class="w-12 h-12 rounded-full border border-white/20 group-hover:scale-110 transition" alt="Lucia">
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Lucía Méndez</h4>
+                            <p class="text-gray-500 text-xs italic">Freelancer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#0a0a0a] border-t border-white/5 py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center">
+            <div class="flex gap-8 text-sm text-gray-500">
+                <a href="#" class="hover:text-white transition">Privacidad</a>
+                <a href="#" class="hover:text-white transition">Términos</a>
+                <a href="contacto.html" class="hover:text-white transition">Contacto</a>
+            </div>
+            <p class="text-xs text-gray-600">© 2026 CodeCraft. Made for Gonzalo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
